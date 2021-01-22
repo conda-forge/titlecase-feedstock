@@ -5,11 +5,9 @@ Home: https://github.com/ppannuto/python-titlecase
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/titlecase-feedstock/blob/master/LICENSE.txt)
 
 Summary: Python Port of John Gruber's titlecase.pl
-
-
 
 Current build status
 ====================
