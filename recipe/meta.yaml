@@ -1,5 +1,5 @@
 {% set name = "titlecase" %}
-{% set version = "1.1.1" %}
+{% set version = "0.13.0" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/titlecase-{{ version }}.tar.gz
-  sha256: 16e279edf085293bc9c44a68ce959c7d6cd5c653e6b5669a3a3640015cb63eb6
+  sha256: 9b1d43db4c3499e47a45d4bd202068261fd585de6bd8e6313a8868533cfa4690
 
 build:
-  number: 1
+  number: 0
   noarch: python
   entry_points:
     - titlecase = titlecase.__init__:cmd
@@ -19,11 +19,12 @@ build:
 
 requirements:
   host:
+    - nose >=1.0
     - pip
     - python >=3.4
+    - regex >=2020.4.4
   run:
     - python >=3.4
-    - regex >=2020.4.4
 
 test:
   imports:
@@ -37,9 +38,9 @@ test:
 about:
   home: https://github.com/ppannuto/python-titlecase
   summary: Python Port of John Gruber's titlecase.pl
-  license: MIT
+  license: Apache-2.0
   # License file manually packaged. See: https://github.com/ppannuto/python-titlecase/pull/71
-  license_file: LICENSE.md
+  license_file: .eggs/regex-2020.11.13-py3.7-linux-x86_64.egg/EGG-INFO/LICENSE.txt
 
 extra:
   recipe-maintainers:
