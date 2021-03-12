@@ -3,7 +3,7 @@ About titlecase
 
 Home: https://github.com/ppannuto/python-titlecase
 
-Package license: MIT
+Package license: Apache-2.0
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/titlecase-feedstock/blob/master/LICENSE.txt)
 
