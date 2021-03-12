@@ -38,9 +38,9 @@ test:
 about:
   home: https://github.com/ppannuto/python-titlecase
   summary: Python Port of John Gruber's titlecase.pl
-  license: Apache-2.0
+  license: MIT
   # License file manually packaged. See: https://github.com/ppannuto/python-titlecase/pull/71
-  license_file: .eggs/regex-2020.11.13-py3.7-linux-x86_64.egg/EGG-INFO/LICENSE.txt
+  license_file: LICENSE.md
 
 extra:
   recipe-maintainers:
