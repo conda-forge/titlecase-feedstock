@@ -25,6 +25,7 @@ requirements:
     - regex >=2020.4.4
   run:
     - python >=3.4
+    - regex >=2020.4.4
 
 test:
   imports:
