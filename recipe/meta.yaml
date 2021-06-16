@@ -1,5 +1,5 @@
 {% set name = "titlecase" %}
-{% set version = "2.1.0" %}
+{% set version = "2.2.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/titlecase-{{ version }}.tar.gz
-  sha256: 69af5a9ce596d19e5944c006cb9c596faff5eb27bb99427a33801dbfb5a3a917
+  sha256: 5d97ee51da37fb57c8753b79efa8edfdf3f10c0060de926efee970081e28d52f
 
 build:
   number: 0
