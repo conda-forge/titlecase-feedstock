@@ -23,6 +23,7 @@ requirements:
     - python >=3.4
   run:
     - python >=3.4
+  run_constrained:
     - regex >=2020.4.4
 
 test:
