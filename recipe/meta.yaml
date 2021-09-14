@@ -11,7 +11,7 @@ source:
   sha256: 9a1595ed9b88f3ce4362a7602ee63cf074e10ac80d1256b32ea1ec5ffa265fa0
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - titlecase = titlecase.__init__:cmd
@@ -21,6 +21,7 @@ requirements:
   host:
     - pip
     - python >=3.4
+    - setuptools-scm >=3
   run:
     - python >=3.4
   run_constrained:
