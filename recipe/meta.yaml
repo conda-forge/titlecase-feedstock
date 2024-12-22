@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/titlecase-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/titlecase-{{ version }}.tar.gz
   sha256: 7d83a277ccbbda11a2944e78a63e5ccaf3d32f828c594312e4862f9a07f635f5
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - titlecase = titlecase.__init__:cmd
@@ -20,11 +20,11 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
     - setuptools >=46.1.0
     - setuptools-scm >=5
   run:
-    - python >=3.7
+    - python >={{ python_min }}
   run_constrained:
     - regex >=2020.4.4
 
@@ -36,6 +36,7 @@ test:
     - titlecase --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/ppannuto/python-titlecase
